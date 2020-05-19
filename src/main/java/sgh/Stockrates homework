@@ -13,6 +13,7 @@ public class StockData {
 
     public static void getAndProcessChange(String stock) throws IOException {
         String filePath = "data_in/" + stock + ".csv";
+        BufferedWriter changeDataFile = new BufferedWriter(chageFile);
         File stocksFile = new File("./" + filePath);
         //TODO HINT: You might need to check if the file doesn't already exist...
       
